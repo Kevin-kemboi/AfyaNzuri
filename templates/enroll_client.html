@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Enroll Client in Program</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label for="client_id" class="form-label">Client</label>
+        <select class="form-control" id="client_id" name="client_id" required>
+            <option value="">Select Client</option>
+            {% for client in clients %}
+                <option value="{{ client.id }}">{{ client.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="program_id" class="form-label">Program</label>
+        <select class="form-control" id="program_id" name="program_id" required>
+            <option value="">Select Program</option>
+            {% for program in programs %}
+                <option value="{{ program.id }}">{{ program.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Enroll</button>
+</form>
+{% endblock %}
