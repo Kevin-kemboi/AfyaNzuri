@@ -1,0 +1,350 @@
+/* Custom Properties for Color Palette */
+:root {
+  --primary-teal: #26A69A;
+  --mint-green: #A5D6A7;
+  --soft-navy: #455A64;
+  --coral: #FF7043;
+  --snow-white: #F5F6F5;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Typography */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--snow-white);
+  color: var(--soft-navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: var(--soft-navy);
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 28px; }
+h3 { font-size: 20px; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Component Styles */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  background-color: #fff;
+  margin-bottom: 24px;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.btn-primary-teal {
+  background-color: var(--primary-teal);
+  border-color: var(--primary-teal);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.btn-primary-teal:hover {
+  background-color: #2BBBAD;
+  border-color: #2BBBAD;
+}
+
+.btn-coral {
+  background-color: var(--coral);
+  border-color: var(--coral);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.btn-coral:hover {
+  background-color: #F4511E;
+  border-color: #F4511E;
+}
+
+.form-control, .form-select {
+  border-radius: 8px;
+  border: 1px solid var(--mint-green);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 12px;
+  transition: var(--transition);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-teal);
+  box-shadow: 0 0 0 0.2rem rgba(38, 166, 154, 0.25);
+}
+
+.alert {
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.navbar {
+  background-color: var(--soft-navy) !important;
+  padding: 16px 0;
+  box-shadow: var(--shadow);
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: var(--primary-teal) !important;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, var(--mint-green) 100%);
+  color: #fff;
+  padding: 120px 0;
+  text-align: center;
+  border-radius: 0 0 24px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1576091160550-2173fd1c9c62?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto 32px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background-color: var(--snow-white);
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 12px;
+  margin: 48px 0;
+  box-shadow: var(--shadow);
+}
+
+.cta-banner h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.cta-banner .btn {
+  font-size: 16px;
+  padding: 14px 32px;
+}
+
+/* Page-Specific Styles */
+.clients-page {
+  background: linear-gradient(to bottom, var(--snow-white), var(--mint-green));
+  padding: 48px 0;
+}
+
+.programs-page {
+  background-color: var(--snow-white);
+  padding: 48px 0;
+}
+
+.enroll-page {
+  background: linear-gradient(to bottom, var(--snow-white), var(--primary-teal));
+  padding: 48px 0;
+}
+
+.dashboard-page {
+  background-color: var(--snow-white);
+  padding: 48px 0;
+}
+
+/* List Group for Programs */
+.list-group-item {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: var(--snow-white);
+  box-shadow: var(--shadow);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 16px;
+}
+
+/* Chart Styles for Dashboard */
+.chart-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 32px; }
+  .hero p { font-size: 16px; }
+  .cta-banner h2 { font-size: 24px; }
+  .card { margin-bottom: 16px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+}
+
+@import '@csstools/normalize.css';
+@import 'sanitize.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typewriter Cursor */
+.typed-cursor {
+  font-size: 48px;
+  color: #fff;
+}
+
+/* Ripple Effect for Buttons */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.ripple:hover::after {
+  width: 200px;
+  height: 200px;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* React-Select Dropdown Styling */
+.react-select__control {
+  border-color: #A8DADC !important;
+  border-radius: 8px !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
+}
+
+.react-select__control--is-focused {
+  border-color: #009688 !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 150, 136, 0.25) !important;
+}
+
+.react-select__menu {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
+}
+
+/* Custom Card Styling */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  background-color: #FAFAFA;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Form Input Styling */
+.form-control, .form-select {
+  border-radius: 8px;
+  border: 1px solid #A8DADC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #009688;
+  box-shadow: 0 0 0 0.2rem rgba(0, 150, 136, 0.25);
+}
+
+/* Alert Styling */
+.alert {
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  padding: 16px;
+  margin-bottom: 24px;
+}

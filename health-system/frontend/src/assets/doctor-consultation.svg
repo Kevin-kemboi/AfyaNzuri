@@ -1,0 +1,6 @@
+<!-- Placeholder SVG -->
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="20" width="160" height="160" rx="20" fill="#a3e4d7"/>
+  <circle cx="100" cy="80" r="30" fill="white"/>
+  <rect x="80" y="120" width="40" height="40" fill="white"/>
+</svg>

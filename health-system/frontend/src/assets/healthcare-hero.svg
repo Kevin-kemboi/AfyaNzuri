@@ -1,0 +1,6 @@
+<!-- Placeholder SVG -->
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="80" fill="#1aa7ec"/>
+  <path d="M100 50L120 90H80L100 50Z" fill="white"/>
+  <path d="M100 120L120 80H80L100 120Z" fill="white"/>
+</svg>
