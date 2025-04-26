@@ -53,6 +53,11 @@ AfyaNzuri is a web application for managing health programs, clients, and enroll
 npm install
 npm start
 
+
+
+
+
+
 ### Backend Setup
  Clone the repository:
    ```bash
