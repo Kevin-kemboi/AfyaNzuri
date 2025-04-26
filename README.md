@@ -1,6 +1,6 @@
 # AfyaNzuri
 
-AfyaNzuri ("Good Health" in Swahili) is a web application for managing health programs, clients, and enrollments. It provides a user-friendly interface for healthcare providers to track client data, manage wellness programs, and visualize insights through a dashboard. Built with a React frontend and Flask backend, AfyaNzuri ensures a responsive, accessible, and error-free experience.
+AfyaNzuri is a web application for managing health programs, clients, and enrollments. It provides a user-friendly interface for healthcare providers to track client data, manage wellness programs, and visualize insights through a dashboard. Built with a React frontend and Flask backend, AfyaNzuri ensures a responsive, accessible, and error-free experience.
 
 ## Features
 
@@ -33,4 +33,40 @@ AfyaNzuri ("Good Health" in Swahili) is a web application for managing health pr
 - **Fonts**:
   - Poppins (headings), Roboto (body) via Google Fonts.
 
-## Project Structure
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js (>=18.x)
+- Python (>=3.8)
+- Git
+- npm or yarn
+- pip
+
+### Frontend Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Kevin-kemboi/AfyaNzuri.git
+   cd AfyaNzuri/frontend
+npm install
+npm start
+
+### Backend Setup
+ Clone the repository:
+   ```bash
+   git clone https://github.com/Kevin-kemboi/AfyaNzuri.git
+   cd AfyaNzuri/backend
+venv\Scripts\activate
+pip install flask flask-cors
+python app.py
+
+
+
+
+
+
+
+
+
